@@ -1,0 +1,155 @@
+[begin] (FluxBox)
+	[exec] (Terminal) {st}
+	[exec] (Firefox) {firefox}
+	[exec] (PcManFM) {pcmanfm}
+	[exec] (Gvim) {gvim}
+	[exec] (Gedit) {gedit}
+	[exec] (Software) {octoxbps}
+	[exec] (Mixer) {st -e alsamixer}
+	[exec] (Network Manager) {/home/jan/bin/wpa_wrapper-cmd}
+	[exec] (Play from clipboard) {ytstart}
+	[exec] (Toggle compositor) {/home/jan/bin/togglecompton}
+	[submenu] (Layouts)
+		[exec] (Colemak) {setxkbmap us -variant colemak}
+	    [exec] (US) {setxkbmap us}
+	    [exec] (CZ) {setxkbmap cz}
+	[end]
+    [submenu] (Development)
+        [exec] (Python) {st -e python}
+        [exec] (Python [v2.7]) {st -e python2.7}
+        [exec] (Qt4 Assistant) {assistant}
+        [exec] (Qt4 Designer) {designer}
+        [exec] (Qt4 Linguist) {linguist}
+        [exec] (Tclsh8.6) {st -e tclsh8.6}
+    [end]
+    [submenu] (Editors)
+        [exec] (CuteMarkEd) {cutemarked}
+        [exec] (GVim) {gvim}
+        [exec] (Nano) {st -e nano}
+        [exec] (Text Editor) {gedit}
+        [exec] (Vi) {st -e vi}
+        [exec] (Vim) {st -e vim}
+    [end]
+    [submenu] (Games)
+        [submenu] (Adventure)
+            [exec] (Caveblazers) {lutris lutris:rungameid/4}
+            [exec] (NetHack) {st -e nethack}
+            [exec] (Spelunky) {lutris lutris:rungameid/1}
+            [exec] (Spelunky classic) {lutris lutris:rungameid/3}
+            [exec] (The Binding of Isaac: Afterbirth+) {lutris lutris:rungameid/5}
+        [end]
+        [submenu] (Amusement)
+            [exec] (Xeyes) {xeyes}
+        [end]
+        [submenu] (Arcade)
+            [exec] (Doom) {prboom-plus}
+            [exec] (Nuclear Throne) {lutris lutris:rungameid/2}
+            [exec] (Quake II) {yquake2}
+            [exec] (SuperTux 2) {supertux2}
+            [exec] (SuperTuxKart) {supertuxkart}
+        [end]
+        [submenu] (Puzzle)
+            [exec] (Quadrapassel) {quadrapassel}
+            [exec] (Slay the Spire) {lutris lutris:rungameid/8}
+        [end]
+        [submenu] (Emulators)
+            [exec] (Snes9x) {snes9x-gtk}
+        [end]
+        [exec] (Lutris) {lutris}
+    [end]
+    [submenu] (Graphics)
+        [exec] (Gpick) {gpick}
+        [exec] (Viewnior) {viewnior}
+    [end]
+    [submenu] (Multimedia)
+        [exec] (ALSA mixer) {st -e alsamixer}
+        [exec] (Audacious) {audacious}
+        [exec] (GNOME Twitch) {gnome-twitch}
+        [exec] (mpv Media Player) {mpv}
+        [exec] (SimpleScreenRecorder) {simplescreenrecorder --logfile}
+        [exec] (SMTube) {smtube}
+        [exec] (Youtube GTK) {gtk-youtube-viewer}
+    [end]
+    [submenu] (Network)
+        [exec] (Discord) {Discord}
+        [exec] (FireFox) {firefox}
+        [exec] (Netsurf) {netsurf}
+        [exec] (Pidgin Internet Messenger) {pidgin}
+        [exec] (TkVNC) {st -e tkvnc}
+        [exec] (W3m) {st -e w3m}
+    [end]
+    [submenu] (Science)
+        [exec] (Xcalc) {xcalc}
+    [end]
+    [submenu] (Shells)
+        [exec] (Dash) {st -e dash -i}
+        [exec] (File Manager PCManFM) {pcmanfm}
+        [exec] (GIT) {st -e git}
+        [exec] (MC) {st -e mc}
+        [exec] (UXTerm) {uxterm}
+        [exec] (Xterm) {xterm}
+    [end]
+    [submenu] (System)
+        [submenu] (Settings)
+            [exec] (Customize Look and Feel) {lxappearance}
+            [exec] (Desktop Preferences) {pcmanfm --desktop-pref}
+            [exec] (OctoXBPS) {octoxbps}
+            [exec] (Preferred Applications) {libfm-pref-apps}
+            [exec] (Window Effects) {compton-conf}
+        [end]
+        [exec] (Grub Customizer) {grub-customizer}
+        [exec] (Htop) {st -e htop}
+        [exec] (pstree) {st -e /usr/bin/pstree.x11}
+        [exec] (pstree) {st -e pstree}
+        [exec] (pstree) {st -e pstree.x11}
+        [exec] (QtConfig) {qtconfig}
+        [exec] (Simple Terminal) {st}
+        [exec] (Top) {st -e top}
+        [exec] (Xconsole) {xconsole}
+        [exec] (XLoad) {xload}
+    [end]
+    [submenu] (Utilities)
+        [exec] (About Xfce) {xfce4-about}
+        [exec] (Application Finder) {xfce4-appfinder}
+        [exec] (Catfish File Search) {catfish}
+        [exec] (compton) {compton}
+        [exec] (Console Matrix [Virtual Console]) {st -e cmatrix -l}
+        [exec] (Console Matrix [X11]) {cmatrix -x}
+        [exec] (Oclock) {oclock}
+        [exec] (Plank) {plank}
+        [exec] (Run Program...) {xfce4-appfinder --collapsed}
+        [exec] (Screenshot) {gnome-screenshot --interactive}
+        [exec] (Xarchiver) {xarchiver}
+        [exec] (Xclipboard) {xclipboard}
+        [exec] (Xclock [analog]) {xclock -analog}
+        [exec] (Xclock [digital]) {xclock -digital}
+        [exec] (Xclock [digital]) {xclock -digital -update 1}
+        [exec] (Xcutsel) {xcutsel}
+        [exec] (Xev) {st -e xev}
+        [exec] (XFontSel) {xfontsel}
+        [exec] (Xkill) {xkill}
+        [exec] (Xlogo) {xlogo}
+        [exec] (Xrefresh) {xrefresh}
+        [exec] (Xsetroot) {xsetroot}
+    [end]
+    [exec] (Lock) {lock}
+    [exec] (Suspend) {zi3lock}
+    [submenu] (Shutdown)
+        [submenu] (Shutdown)
+            [exec] (Shutdown) {doas /sbin/poweroff}
+        [end]
+    [end]
+    [separator]
+    [submenu] (FluxBox)
+        [workspaces] (Workspaces)
+        [submenu] (Styles)
+            [stylesdir] (/usr/share/fluxbox/styles)
+            [stylesdir] (~/.fluxbox/styles)
+        [end]
+        [config] (Configure)
+        [reconfig] (Reconfig)
+        [restart] (Restart)
+        [separator]
+        [exit] (Exit)
+    [end]
+[end]

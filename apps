@@ -1,0 +1,22 @@
+[app] (name=fbrun)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=xfce4-terminal)
+  [Layer] {8}
+[end]
+[app] (name=compton)
+  [Layer] {12}
+[end]
+[app] (name=plank)
+  [Layer] {10}
+  [Deco] {none}
+[end]
+[app] (name=guvcview)
+  [Layer] {2}
+  [Deco] {none}
+  [Sticky] {true}
+[end]
+[app] (gvim)
+  [Maximized] {yes}
+[end]

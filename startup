@@ -1,0 +1,52 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+# xmodmap "/home/jan/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+# xfdesktop --disable-wm-check &
+# lxpanel &
+# xfce4-power-manager
+export TERM=st
+if xrandr | grep -q "HDMI1 connected"
+then
+    xrandr --output HDMI1 --right-of eDP1
+fi
+
+export PATH=$PATH:/home/jan/bin
+compton &
+#xcompmgr &
+xfce4-power-manager &
+cbatticon -l 40 -r 20 -u 15 -x xfce4-power-manager-settings &
+volumeicon &
+#net
+# alias 'xterm'='xterm -fa terminus -fs 12'
+# rox -S --top=PANEL &
+# plank &
+#xfce4-panel --disable-wm-check &
+# pcmanfm --desktop &
+synclient TapButton1=1
+# compton &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+# export PATH=$PATH:~/bin
+setxkbmap us -variant colemak
+xset -b
+# fbsetbg /home/jan/custom/wall.png
+fbsetroot -solid "#31363B"
+# i3bar &
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/jan/.fluxbox/log"
